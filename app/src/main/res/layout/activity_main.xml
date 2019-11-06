@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:hint="搜点什么吧"
+            android:maxLines="1"
+            android:digits="abcdefghijklmnopqrstuvwxyz"
+            />
+        <Button
+            android:text="+"
+            android:layout_width="60dp"
+            android:layout_height="55dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#c0c0c0">
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+    android:id="@+id/left_fragment"
+    android:name="com.example.a18801.word_remenber.LeftFragment"
+    android:layout_weight="1">
+</fragment>
+    <LinearLayout
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#c0c0c0"></LinearLayout>
+<fragment
+    android:layout_width="230dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main_right"
+    android:name="com.example.a18801.word_remenber.RightFragment"
+    >
+</fragment>
+</LinearLayout>
+</LinearLayout>
